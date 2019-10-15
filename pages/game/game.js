@@ -16,17 +16,46 @@ console.log('game.js loaded');
 
 
 
-// the grid boxes need to communicate with the DOM
-const box = document.querySelectorAll('.box');
+const moves = [];
+let turn = 'X'
 
-// loop through the grid boxes and add event listener
-for (let i = 0; i < box.length; i++) {
-    box[i].addEventListener('click', function() {
-        console.log('player clicked');
+
+// the grid boxes need to communicate with the DOM
+const boxes = document.querySelectorAll('.box');
+
+// loop through the grid boxes and add event listener to return alternating moves of 'X' and 'O' 
+for (let i = 0; i < boxes.length; i++) {
+    boxes[i].id = i
+    boxes[i].addEventListener('click', function() {
+        moves[this.id] = turn
+        if (turn === 'X' ) {
+            turn = 'O' 
+        } else {
+            turn = 'X'
+        }
+        console.log(moves);
     }) 
 }
 
-// the grid boxes need to return an 'X' or 'O' when clicked.
+// list all of the possible combinations that are considered 'winning'.
+if (moves[0] === moves[1] && moves[1] === moves[2]) { 
+}
+else if (moves[3] === moves[4] && moves[4] === moves[5]) {
+}
+else if (moves[6] === moves[7] && moves[7] === moves[8]) {
+   
+}
+else if (moves[0] === moves[4] && moves[4] === moves[8]) {
+}
+else if (moves[2] === moves[4] && moves[4] === moves[6]) {  
+}
+else if (moves[0] === moves[3] && moves[3] === moves[6]) {
+}
+else if (moves[1] === moves[4] && moves[4] === moves[7]) {   
+}
+else if (moves[2] === moves[5] && moves[5] === moves[8]) {
+}
+
 
 
 // a display is need to show which players turn it is to make a selecton.
@@ -48,5 +77,3 @@ for (let i = 0; i < box.length; i++) {
 
 
 // set a button to refesh page and restart game to zero played and zero points.
-
-
