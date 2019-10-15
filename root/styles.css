@@ -81,6 +81,10 @@ h3 {
     align-items: center;
 }
 
+.box:hover {
+    background-color: #576b80;
+}
+
 .playerTwo-container {
     grid-template-areas: 'playerTwo';
 }
