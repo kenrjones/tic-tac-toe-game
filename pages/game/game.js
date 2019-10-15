@@ -18,6 +18,7 @@ console.log('game.js loaded');
 
 const moves = [];
 let turn = 'X'
+let counter = 0
 
 
 // the grid boxes need to communicate with the DOM
@@ -28,40 +29,57 @@ for (let i = 0; i < boxes.length; i++) {
     boxes[i].id = i
     boxes[i].addEventListener('click', function() {
         moves[this.id] = turn
-        if (turn === 'X' && !boxes[i].innerHTML ) {
-            boxes[i].innerHTML = 'X';
+        if (turn === 'X' && !boxes[i].innerText ) {
+            boxes[i].innerText = 'X';
             turn = 'O';
-        } else if (!boxes[i].innerHTML) {
+        } else if (!boxes[i].innerText) {
             turn = 'X'
-            boxes[i].innerHTML = 'O';
+            boxes[i].innerText = 'O';
         } else {
             alert ('Make another selection');
         }
+        winners()
      }) 
 }
 
+
 // list all of the possible combinations that are considered 'winning'.
-if (moves[0] === moves[1] && moves[1] === moves[2]) { 
-}
-else if (moves[3] === moves[4] && moves[4] === moves[5]) {
-}
-else if (moves[6] === moves[7] && moves[7] === moves[8]) {
-   
-}
-else if (moves[0] === moves[4] && moves[4] === moves[8]) {
-}
-else if (moves[2] === moves[4] && moves[4] === moves[6]) {  
-}
-else if (moves[0] === moves[3] && moves[3] === moves[6]) {
-}
-else if (moves[1] === moves[4] && moves[4] === moves[7]) {   
-}
-else if (moves[2] === moves[5] && moves[5] === moves[8]) {
-}
+
+function winners() {
+    counter++;
+
+    if ((moves[0] === moves[1]) && (moves[1] === moves[2]) && (moves[0] != undefined)) {
+        alert ('We have a winner') 
+    }
+    else if ((moves[3] === moves[4]) && (moves[4] === moves[5]) && (moves[3] != undefined)) {
+        alert ('We have a winner') 
+    }
+    else if ((moves[6] === moves[7]) && (moves[7] === moves[8]) && (moves[6] != undefined)) {
+        alert ('We have a winner') 
+    }
+    else if ((moves[0] === moves[4]) && (moves[4] === moves[8]) && (moves[0] != undefined)) {
+        alert ('We have a winner') 
+    }
+    else if ((moves[2] === moves[4]) && (moves[4] === moves[6]) && (moves[2] != undefined)) {
+        alert ('We have a winner')   
+    }
+    else if ((moves[0] === moves[3]) && (moves[3] === moves[6]) && (moves[0] != undefined)) {
+        alert ('We have a winner') 
+    }
+    else if ((moves[1] === moves[4]) && (moves[4] === moves[7]) && (moves[1] != undefined)) {
+        alert ('We have a winner')    
+    }
+    else if ((moves[2] === moves[5]) && (moves[5] === moves[8]) && (moves[2] != undefined)) {
+        alert ('We have a winner') 
+    }
+    if (counter === 9) {
+        alert ('We have a Draw')
+        console.log(counter);
+    } 
+};
 
 
-
-// a display is need to show which players turn it is to make a selecton.
+// stop game from reading a empty baord as a winner
 
 
 // store the seclections of each player.
