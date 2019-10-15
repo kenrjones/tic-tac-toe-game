@@ -16,6 +16,16 @@ console.log('game.js loaded');
 
 
 
+// the grid boxes need to communicate with the DOM
+const box = document.querySelectorAll('.box');
+
+// loop through the grid boxes and add event listener
+for (let i = 0; i < box.length; i++) {
+    box[i].addEventListener('click', function() {
+        console.log('player clicked');
+    }) 
+}
+
 // the grid boxes need to return an 'X' or 'O' when clicked.
 
 
