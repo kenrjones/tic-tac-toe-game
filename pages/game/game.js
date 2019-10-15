@@ -28,13 +28,16 @@ for (let i = 0; i < boxes.length; i++) {
     boxes[i].id = i
     boxes[i].addEventListener('click', function() {
         moves[this.id] = turn
-        if (turn === 'X' ) {
-            turn = 'O' 
-        } else {
+        if (turn === 'X' && !boxes[i].innerHTML ) {
+            boxes[i].innerHTML = 'X';
+            turn = 'O';
+        } else if (!boxes[i].innerHTML) {
             turn = 'X'
+            boxes[i].innerHTML = 'O';
+        } else {
+            alert ('Make another selection');
         }
-        console.log(moves);
-    }) 
+     }) 
 }
 
 // list all of the possible combinations that are considered 'winning'.
