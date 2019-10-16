@@ -7,7 +7,7 @@
     <title>tic-tac-toe game board</title>
     <meta name ="keywords" content="tic-tac-toe, tic tac toe, tic, tac, toe, xo, x. o">
     <meta name="description" content="This is a single and multiplay tic-tac-toe game">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Roboto|Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Roboto|Shrikhand|Bungee|Bungee+Shade&display=swap" rel="stylesheet">
     <link href="../../root/styles.css" rel="stylesheet">
 </head>
 
@@ -30,8 +30,9 @@
         <h3>Lorem ipsum dolor sit amet</h3>
         
         <div class="main-container">
+            <!-- this container will be a grid where we will store the score for player two. no html or js logic set for it yet  -->
             <div class='playerOne-container'>
-                <h4 class="playerOneName">Player One</h4>
+                <h4 class="playerOneName"></h4>
                 <div class="playerOneScore"></div>
             </div>
 
@@ -46,13 +47,20 @@
                 <div class="box"></div>
                 <div class="box"></div>
             </div>
-
+            
+            <!-- this container will be a grid where we will store the score for player two. no html or js logic set for it yet  -->
             <div class='playerTwo-container'>
-                <h4 class="playerTwoName">Player Two</h4>
+                <h4 class="playerTwoName"></h4>
                 <div class="playerTwoScore"></div>
             </div>
         </div>
     </main>
+
+    <div class='alert-box'>
+         <div class="game-over"></div>
+        <div class="winner"></div>
+        <button class="play-again"></button>
+    </div>
 
     <footer>
         <p>&copy;2019 tic-tac-toe, Designed by Kendrick R Jones</p> 

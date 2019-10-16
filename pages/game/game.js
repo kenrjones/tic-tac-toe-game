@@ -1,6 +1,3 @@
-console.log('game.js loaded');
-
-
 // // Technical Requirements
 //     Render a game board in the browser
 //     Switch turns between X and O (or whichever markers you select)
@@ -14,11 +11,13 @@ console.log('game.js loaded');
 //     Have well-formatted, and well-commented code (e.g. Use Prettier and follow these HTML & CSS Guidelines)
 //     Some unique features that distinguish your game from the "normal" solution listed above. Here are some ideas:
 
+console.log('game.js loaded');
 
 
 const moves = [];
 let turn = 'X'
 let counter = 0
+
 
 
 // the grid boxes need to communicate with the DOM
@@ -31,61 +30,87 @@ for (let i = 0; i < boxes.length; i++) {
         moves[this.id] = turn
         if (turn === 'X' && !boxes[i].innerText ) {
             boxes[i].innerText = 'X';
+            winners();
             turn = 'O';
         } else if (!boxes[i].innerText) {
+            winners();
             turn = 'X'
             boxes[i].innerText = 'O';
         } else {
             alert ('Make another selection');
         }
-        winners()
-     }) 
+    }) 
 }
 
 
 // list all of the possible combinations that are considered 'winning'.
-
 function winners() {
     counter++;
 
-    if ((moves[0] === moves[1]) && (moves[1] === moves[2]) && (moves[0] != undefined)) {
-        alert ('We have a winner') 
-    }
+    if ((moves[0] === moves[1]) && (moves[1] === moves[2]) && (moves[0] != undefined)) { 
+        alertWinner(moves[0]);
+     }
     else if ((moves[3] === moves[4]) && (moves[4] === moves[5]) && (moves[3] != undefined)) {
-        alert ('We have a winner') 
+        alertWinner(moves[3]);
     }
     else if ((moves[6] === moves[7]) && (moves[7] === moves[8]) && (moves[6] != undefined)) {
-        alert ('We have a winner') 
+        alertWinner(moves[6]); 
     }
     else if ((moves[0] === moves[4]) && (moves[4] === moves[8]) && (moves[0] != undefined)) {
-        alert ('We have a winner') 
+        alertWinner(moves[0]);  
     }
     else if ((moves[2] === moves[4]) && (moves[4] === moves[6]) && (moves[2] != undefined)) {
-        alert ('We have a winner')   
+        alertWinner(moves[2]);    
     }
     else if ((moves[0] === moves[3]) && (moves[3] === moves[6]) && (moves[0] != undefined)) {
-        alert ('We have a winner') 
+        alertWinner(moves[0]);;  
     }
     else if ((moves[1] === moves[4]) && (moves[4] === moves[7]) && (moves[1] != undefined)) {
-        alert ('We have a winner')    
+        alertWinner(moves[1]);    
     }
     else if ((moves[2] === moves[5]) && (moves[5] === moves[8]) && (moves[2] != undefined)) {
-        alert ('We have a winner') 
+        alertWinner(moves[2]); 
     }
     if (counter === 9) {
-        alert ('We have a Draw')
-        console.log(counter);
+        alertDraw()  
     } 
 };
 
+//alert winner 'X' or 'O"
+function alertWinner(winner) {
+    const alertBox = document.querySelector('.alert-box'); 
+    alertBox.style.display = "flex";
 
-// stop game from reading a empty baord as a winner
+    const gameOver = document.querySelector(".game-over");
+    gameOver.innerText = "GAME OVER";
+
+    let winnerText = document.querySelector(".winner");
+    winnerText.innerText = `${winner} Wins`;
+}
+
+//alert draw
+function alertDraw() {
+    const alertBox = document.querySelector('.alert-box'); 
+    alertBox.style.display = "flex";
+
+    const gameOver = document.querySelector(".game-over");
+    gameOver.innerText = "GAME OVER";
+
+    let drawText = document.querySelector(".winner");
+    drawText.innerText = `DRAW!`;
+}
+
+// reload page button
+const playAgain = document.querySelector(".play-again");
+playAgain.innerText = 'PLAY AGAIN'; 
+
+playAgain.addEventListener('click', function() {
+    location.reload();
+    console.log('');
+})
 
 
-// store the seclections of each player.
 
-
-// collect all of the possible winning combinations.
 
 
 // alert when there is a winner or a draw.
