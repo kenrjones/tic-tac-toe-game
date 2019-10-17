@@ -7,35 +7,34 @@
     <title>tic-tac-toe game board</title>
     <meta name ="keywords" content="tic-tac-toe, tic tac toe, tic, tac, toe, xo, x. o">
     <meta name="description" content="This is a single and multiplay tic-tac-toe game">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Roboto|Shrikhand|Bungee|Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Roboto|Shrikhand|Bungee|Bungee+Shade|Montserrat:900&display=swap" rel="stylesheet">
     <link href="../../root/styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="game-body">
     <header>
         <!-- <h1 class="insideLogo">tic-tac-toe</h1> -->
         <!-- <img class='logo' src="" alt="game logo"> -->
     </header>
     <!-- nav button to return to home screen -->
     <nav>
-        <ul>
-            <li class="returnHome">Home</li>
-        </ul>
+        <button class="homeBtn" onclick="window.location.href = '../../root/index.html';">Home</button>
     </nav>
 
     <main>
         <!-- add small h1 text or an imbeded image that serves as game logo -->
-        <h1 class="insideLogo">tic-tac-toe</h1>
+        <h1 class="insideLogo">tic tac toe</h1>
 
-        <h3>Lorem ipsum dolor sit amet</h3>
+        <h3 class="your-turn"></h3>
         
-        <div class="main-container">
+        <div class="game-container">
             <!-- this container will be a grid where we will store the score for player two. no html or js logic set for it yet  -->
             <div class='playerOne-container'>
                 <h4 class="playerOneName"></h4>
                 <div class="playerOneScore"></div>
             </div>
 
+            <!-- game board container -->
             <div class='game-board'>
                 <div class="box"></div>
                 <div class="box"></div>
@@ -57,12 +56,12 @@
     </main>
 
     <div class='alert-box'>
-         <div class="game-over"></div>
+        <div class="game-over"></div>
         <div class="winner"></div>
         <button class="play-again"></button>
     </div>
 
-    <footer>
+    <footer class='game-footer'>
         <p>&copy;2019 tic-tac-toe, Designed by Kendrick R Jones</p> 
     </footer>
 

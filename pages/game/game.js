@@ -30,17 +30,22 @@ for (let i = 0; i < boxes.length; i++) {
         moves[this.id] = turn
         if (turn === 'X' && !boxes[i].innerText ) {
             boxes[i].innerText = 'X';
+            
             winners();
             turn = 'O';
+            alertTurn();
         } else if (!boxes[i].innerText) {
             winners();
             turn = 'X'
+            alertTurn();
             boxes[i].innerText = 'O';
         } else {
             alert ('Make another selection');
         }
     }) 
 }
+
+
 
 
 // list all of the possible combinations that are considered 'winning'.
@@ -76,6 +81,12 @@ function winners() {
     } 
 };
 
+//alert whos turn
+function alertTurn() {
+    let yourTurn = document.querySelector(".your-turn");
+    yourTurn.innerText = (` Let's go "${turn}" you got this`);
+} 
+
 //alert winner 'X' or 'O"
 function alertWinner(winner) {
     const alertBox = document.querySelector('.alert-box'); 
@@ -108,6 +119,7 @@ playAgain.addEventListener('click', function() {
     location.reload();
     console.log('');
 })
+alertTurn();
 
 
 

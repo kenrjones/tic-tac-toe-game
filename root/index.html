@@ -7,26 +7,34 @@
     <title>tic-tac-toe</title>
     <meta name ="keywords" content="tic-tac-toe, tic tac toe, tic, tac, toe, xo, x. o">
     <meta name="description" content="This is a single and multiplay tic-tac-toe game">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Roboto|Shrikhand|Bungee|Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Roboto|Shrikhand|Bungee|Bungee+Shade|Montserrat:900&display=swap" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- add a header that will be stacked h1 text or an imbeded image that serves as game logo -->
-    <header>
-        <h1 class="mainLogo">tic<br>tac<br>toe</h1>
-        <!-- <img class='logo' src="" alt="game logo"> -->
-    </header>
+<body id="home-body">
+    <header></header>
 
     <main>
-        <p>Fill the board with X's and O's, the first player to strike three in a row, will win the game we call tic-tac-toe.
-    <!-- the buttons should allow user to select single or multi-player. If we cannot get single-player vs ai to work by deadline just use one button that says 'Lets Play'. -->
-        <button class='play'></button>
-    <!-- add a image of the game board in action as the main visual element on the page -->
-        <img clss='mainImg'src="" alt="This is a image of the game board">
+        <div class="landing-container">
+            <h1 class="mainLogo">tic tac toe</h1>
+            <h2>A multiplayer webgame.</h2>
+            <p>Fill the board with X's and O's, <br> the first player to strike three in a row, <br> will win the game we call tic tac toe.</p>
+            <button class='playBtn' onclick="window.location.href = '../pages/game/game.html';">LET'S PLAY!</button>
+            <div class='display-board'>
+                    <div class="displayBox">X</div>
+                    <div class="displayBox"></div>
+                    <div class="displayBox">O</div>
+                    <div class="displayBox">O</div>
+                    <div class="displayBox">X</div>
+                    <div class="displayBox"></div>
+                    <div class="displayBox"></div>
+                    <div class="displayBox"></div>
+                    <div class="displayBox">X</div>
+                </div>
+        </div>
     </main>
 
-    <footer></footer>
+    <footer class="home-footer">
         <p>&copy;2019 tic-tac-toe, Designed by Kendrick R Jones</p> 
     </footer>
 
