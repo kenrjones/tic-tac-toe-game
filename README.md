@@ -25,6 +25,8 @@ KISS = 'Keep It Simple Stupid'<br>
 
 My goal was to build a simple yet dynamic game of Tic Tac Toe that involved minimal html and css along with a esay to navagate js logic that consited of using flexbox and css grid layouts, looping through arrarys, calling functions, and using event listners. My aim was not to re-envent the wheel. I just wanted to give a nice refresh to a classic game.<br>
 
+## Wireframes
+
 ## Technologies Used:
 • Command Line<br>
 • Source Control (git repository<br> 
