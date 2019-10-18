@@ -8,7 +8,7 @@
 ## User Stories:  
 
 ### Epics
-• I am a user that only has time for games during brief moments during my busin schedulae (lunch breaks, public transit, between meetings, bathroom, before bed)<br>
+• I am a user that only has time for games during brief moments during my busy schedulae<br> (lunch breaks, public transit, between meetings, bathroom, before bed)<br>
 • As user, I enjoy classic games with simple instructions<br>
 • As a user, like challenging myself with individual games then challenging other users to test my skills<br>
 • I am a user that is attracted to clean design and web-pages/apps that are easy to navigate<br> 
