@@ -1,8 +1,8 @@
 # tic-tac-toe  
 
 ## Big Goals:  
-• Build a web application from scratch, without a starter codebase .  
-• Separate HTML, CSS, and JavaScript files in the application . 
+• Build a web application from scratch, without a starter codebase . 
+• Separate HTML, CSS, and JavaScript files in the application .
 • Build a dynamic game that allows two players to compete . 
 
 ## User Stories:  
