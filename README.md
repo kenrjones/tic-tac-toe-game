@@ -1,7 +1,7 @@
 # tic-tac-toe
 
 ## Big Goals:
-• Build a web application from scratch, without a starter codebase
+• Build a web application from scratch, without a starter codebase 
 • Use your programming skills to work out the game logic for a simple game like Tic Tac Toe
 • Separate HTML, CSS, and JavaScript files in your application
 • Build an application to a specification that someone else gives you
