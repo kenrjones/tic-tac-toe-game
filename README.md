@@ -51,4 +51,7 @@ My goal was to build a simple yet dynamic game of Tic Tac Toe that involved mini
 • Use LocalStorage to persist data locally to allow games to continue after page refresh or loss of internet connectivity<br>
 • Create an AI opponent<br> 
 
+## Live Link
+[This is a link]( https://pages.git.generalassemb.ly/kenrjones/tic-tac-toe/)
+
 
