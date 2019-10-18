@@ -17,11 +17,11 @@
 • I am a user that is attracted to clean design and web-pages/apps that are easy to navigate
 
 ### Direct User Stores for Tic Tac Toe
-As a user, I should be able to easily start the game 
-As a user, I should be able to alternate between the game pieces (X, O) with AI or other users
-As a user, I should be shown a message displaying who's turn it is
-As a user, I should be shown a message when I win, lose or end the game with a draw
-As a user, I should not be able to continue playing once I win, lose, or draw
+• As a user, I should be able to easily start the game 
+• As a user, I should be able to alternate between the game pieces (X, O) with AI or other users
+• As a user, I should be shown a message displaying who's turn it is
+• As a user, I should be shown a message when I win, lose or end the game with a draw
+• As a user, I should not be able to continue playing once I win, lose, or draw
 
 ## Aproach:
 KISS = 'Keep It Simple Stupid'
@@ -35,6 +35,14 @@ My goal was to build a simple yet dynamic game of Tic Tac Toe that involved mini
 • Google Chrome Web Browser & Developer Tools
 • Firefox Web Browser & Developer Tools
 
+## Requirements Met
+• All goals and technical requriments met
 
+## Future Plans
+• Clean up to code so that is DRY
+• Refactor code so page is resposive across all screen sizes
+• Develop a way to collect and store user scores
+• Use LocalStorage to persist data locally to allow games to continue after page refresh or loss of internet connectivity
+• Create an AI opponent
 
 
