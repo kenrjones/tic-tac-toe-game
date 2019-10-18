@@ -190,7 +190,7 @@ h3 {
     display: none;
     width: 440px;
     height: 485px;
-    top: 202px;
+    top: 190px;
     position: absolute;
     background-color: #1EC1C8;
     left: 42%;
@@ -239,7 +239,7 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 12px; 
     text-align: center;
-    margin: -45px;
+    margin: -30px;
     /* width: 100%; */
 }
 
