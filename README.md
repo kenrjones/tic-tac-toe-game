@@ -10,11 +10,11 @@
 ### Epics
 • I am a user that only has time for games during brief moments during my busy schedulae<br> (lunch breaks, public transit, between meetings, bathroom, before bed)<br>
 • As user, I enjoy classic games with simple instructions<br>
-• As a user, like challenging myself with individual games then challenging other users to test my skills<br>
+• As a user, I like challenging myself with individual games then challenging other users to test my skills<br>
 • I am a user that is attracted to clean design and web-pages/apps that are easy to navigate<br> 
 
 ### Direct User Stores for Tic Tac Toe
-• As a user, I should be able to easily start the game<br>  
+• As a user, I should be able to easily start the game<br>
 • As a user, I should be able to alternate between the game pieces (X, O) with AI or other users<br> 
 • As a user, I should be shown a message displaying who's turn it is<br> 
 • As a user, I should be shown a message when I win, lose or end the game with a draw<br>
