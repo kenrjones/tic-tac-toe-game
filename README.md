@@ -21,9 +21,7 @@
 • As a user, I should not be able to continue playing once I win, lose, or draw<br> 
 
 ## Aproach:
-KISS = 'Keep It Simple Stupid'<br> 
-
-My goal was to build a simple yet dynamic game of Tic Tac Toe that involved minimal html and css along with a esay to navagate js logic that consited of using flexbox and css grid layouts, looping through arrarys, calling functions, and using event listners. My aim was not to re-envent the wheel. I just wanted to give a nice refresh to a classic game.<br>
+Build a simple yet dynamic game of Tic Tac Toe that involved minimal html and css along with an esay to navagate js logic that consisted of using flexbox and css grid layouts, looping through arrarys, calling functions, and using event listners. My aim was not to re-envent the wheel. I just wanted to give a nice refresh to a classic game.<br>
 
 ## Wireframes
 ### Landing Page
